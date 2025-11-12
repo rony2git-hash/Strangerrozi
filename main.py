@@ -251,7 +251,6 @@ def main():
 if __name__ == "__main__":
     try:
         print("🚀 Starting Stranger-X Bot...")
-        main()
     except KeyboardInterrupt:
         print("🛑 Bot stopped manually.")
     except Exception as e:
