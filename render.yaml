@@ -1,10 +1,20 @@
 services:
   - type: worker
-    name: strangerx-bot
-    env: python
+    name: stranger-x-bot
+    env: docker
     plan: free
+    repo: https://github.com/rony2git-hash/Strangerrozi.git
+    branch: main
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python main.py"
     envVars:
       - key: BOT_TOKEN
-        sync: true
+        value: "false"
+      - key: CHANNEL_USERNAME
+        value: "false"
+      - key: CHANNEL_JOIN_URL
+        value: "false"
+      - key: WELCOME_IMAGE
+        value: "false"
