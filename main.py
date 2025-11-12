@@ -247,4 +247,16 @@ def main():
     print("Bot starting...")
     application.run_polling(allowed_updates=["message", "callback_query"])
 
+
 if __name__ == "__main__":
+    main()
+    try:
+        print("🚀 Starting Stranger-X Bot...")
+        main()
+    except KeyboardInterrupt:
+        print("🛑 Bot stopped manually.")
+    except Exception as e:
+        import traceback
+        print("❌ Error while running the bot:")
+        traceback.print_exc()
+
