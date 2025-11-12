@@ -1,4 +1,4 @@
-;import json
+import json
 import re
 import requests
 from urllib.parse import quote_plus
