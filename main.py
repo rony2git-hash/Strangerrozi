@@ -249,7 +249,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
     try:
         print("🚀 Starting Stranger-X Bot...")
         main()
